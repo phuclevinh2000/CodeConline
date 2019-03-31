@@ -1,0 +1,56 @@
+class Car: public Vehicle {
+public: 
+    string brand; 
+    string model; 
+    string register_no;
+    bool running;
+ 
+    Car(int v_weight, int v_speed, long v_km, string c_brand, string c_model, string c_license, bool c_running);
+ 
+    void turn_on();
+ 
+    void turn_off();
+ 
+    void check_up(); 
+};
+ 
+Car::Car(int weight, int speed, long km, string new_brand, string new_model, string new_license, bool if_running): 
+    Vehicle(weight, speed, km) 
+{ 
+    brand = new_brand;
+    model = new_model; 
+    register_no = new_license;
+    running = if_running; 
+}
+ 
+void Car::turn_on() 
+{ 
+    running = 1; 
+} 
+void Car::turn_off() 
+{ 
+    running = 0; 
+}
+void Car::check_up() 
+{ 
+    cout<<"car info:\n" << 
+"brand:" << brand << endl <<
+ 
+"model:" << model << endl <<
+
+"Kilometres:" << driven_km << endl <<
+
+ 
+"weight:" << weight << endl <<
+
+ 
+"Top speed:" << top_speed << endl <<
+ 
+"License plate:" << register_no << endl;
+
+    if (running == 1) {
+        cout << "car is running." << endl; 
+    } else if (running == 0) { 
+        cout << "car is not running." << endl; 
+    } 
+}

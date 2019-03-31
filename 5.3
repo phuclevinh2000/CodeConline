@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int chonso, num1, num2, out;
+	cout<<"Choose desired calculation:"  << "\n";
+	
+	cout<<"1: subtraction" << "\n";
+	cout<<"2: addition" << "\n";
+	cout<<"3: multiplication"<< "\n";
+	cout<<"4: division"<< "\n";
+	cout<<"5: Remainder"<< "\n";
+	
+	cout<<"Choose a calculation:";
+		cin >> chonso;
+	cout<<"Input first number:";
+	cin >> num1;
+	cout<<"Input second number:";
+	cin >> num2;
+	if(chonso == 1)
+	{ out = num1 - num2;
+	 cout << num1 << "-" << num2 << " = "<< out<< endl;}
+	if(chonso == 2)
+	{ out = num1 + num2;
+	 cout << num1 << "+" << num2 << " = "<< out<< endl;}
+	if(chonso == 3)
+	{ out = num1 * num2;
+	 cout << num1 << "*" << num2 << " = "<< out<< endl;}
+	if(chonso == 4)
+	{ out = num1 / num2;
+	 cout << num1 << "/" << num2 << " = "<< out<<endl;}
+	if(chonso == 5)
+	{ out = num1 % num2;
+	 cout << num1 << "%" << num2 << " = "<< out<<endl;}
+}

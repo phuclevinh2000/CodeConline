@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	float num,ave;
+	float s=0, tong =0;
+	cout << "Program calculates the test grade average."<< "\n";
+	cout << "Finish inputting with a negative number." <<"\n";
+	
+	do {
+		cout << "Input grade (4-10) "; 
+		cin >> num;
+		if( num >=4 && num <=10) {
+			s=s+1;
+			tong = tong + num;
+			ave = tong / s;}
+			
+	}
+	while (num >=1);
+	cout << "You inputted " << s << " grades." << "\n";
+		
+	cout << "Grade average: " << ave << endl; ;
+	
+		
+}

@@ -1,0 +1,22 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int age;
+	char sex;
+	cout <<"Are you a male or a female (m/f):";
+	cin >> sex;
+	cout <<"Your age:";
+	cin >> age;
+	 if  ( age >0 && age <=55 && sex == 'm') 
+		cout << "You are a man in his prime!"<< endl;
+	 else if ( 0<age && age <=55&& sex == 'f') 
+		cout << "You are like a blooming flower!"<< endl;
+	 else if( 56<=age && age<=100  && sex == 'm') 
+		cout << "You are a wise man!"<< endl;
+	 else if( 56<=age && age<=100&& sex == 'f') 
+		cout << "You look young for your age!"<< endl;
+	else if (age <0 || age >100)
+		cout<<"Error encountered!"<< endl;
+}

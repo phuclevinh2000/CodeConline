@@ -1,0 +1,10 @@
+class AskAndPrint{
+	public:
+		void DoYourThing(char str[]);
+};
+void AskAndPrint::DoYourThing(char str[])
+{
+	cout << str;
+	cin.get(str,20);
+	cout << str << endl;
+}
